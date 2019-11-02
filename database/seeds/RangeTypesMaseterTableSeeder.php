@@ -13,16 +13,20 @@ class RangeTypesMaseterTableSeeder extends Seeder
     {
       DB::table('range_types_maseter')->insert([
         [
-            'range_type_name' => '正面1マス'
+            'id' => 1,
+            'range_type_name' => '近接攻撃'
         ],
         [
-            'range_type_name' => '正面5マス'
+            'id' => 2,
+            'range_type_name' => '遠隔攻撃'
         ],
         [
-            'range_type_name' => '周囲1マス'
+            'id' => 3,
+            'range_type_name' => '防御'
         ],
         [
-            'range_type_name' => '周囲5マス'
+            'id' => 4,
+            'range_type_name' => '特殊'
         ]
       ]);
     }
