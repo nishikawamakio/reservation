@@ -4,7 +4,6 @@ use Illuminate\Database\Seeder;
 
 class WeaponsMaseterTableSeeder extends Seeder
 {
-
     private $militiaList = [
         '最軽量近接武器'   => 1,
         '小型近接武器'     => 2,
@@ -68,7 +67,6 @@ class WeaponsMaseterTableSeeder extends Seeder
      * @var integer
      */
     const GUN = 3;
-
 
     /**
      * Run the database seeds.
