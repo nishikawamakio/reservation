@@ -14,7 +14,7 @@ class AlterImpactRangeMaster extends Migration
     public function up()
     {
         Schema::rename('impact_ranges_maseter', 'impact_ranges_master');
-        Schema::create('impact_ranges_master', function (Blueprint $table) {
+        Schema::table('impact_ranges_master', function (Blueprint $table) {
             $table->renameColumn('impact_ranges_name', 'name');
         });
     }
@@ -27,7 +27,7 @@ class AlterImpactRangeMaster extends Migration
     public function down()
     {
         Schema::rename('impact_ranges_master', 'impact_ranges_maseter');
-        Schema::create('impact_ranges_maseter', function (Blueprint $table) {
+        Schema::table('impact_ranges_maseter', function (Blueprint $table) {
             $table->renameColumn('name', 'impact_ranges_name');
         });
     }
